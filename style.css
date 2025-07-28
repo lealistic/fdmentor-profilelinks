@@ -1,0 +1,89 @@
+/* CSS Variables */
+
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: var(--grey-900);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+img {
+  max-width: 90px;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+ul {
+  list-style: none;
+}
+
+/* Structure Styles */
+
+.container {
+  max-width: 384px;
+  background-color: var(--grey-800);
+  padding: 40px;
+  margin: 25px;
+  border-radius: 15px;
+}
+.about-me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-me img {
+  margin-bottom: 1.75rem;
+}
+.about-me h1 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.about-me h2 {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  margin-bottom: 1.75rem;
+}
+.about-me p {
+  font-size: 0.875rem;
+  color: var(--white);
+  margin-bottom: 26px;
+}
+.list-links {
+  display: flex;
+  gap: calc(1rem - 1px);
+  flex-direction: column;
+}
+.link-item {
+  display: block;
+  background-color: var(--grey-700);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+}
+.link-item:hover {
+  background-color: var(--primary-color);
+  color: var(--grey-900);
+  transition: 0.2s;
+}
